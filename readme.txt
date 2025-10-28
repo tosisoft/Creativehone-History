@@ -1,11 +1,11 @@
 === Creativehone History ===
 Contributors: tosisoft
-Donate link: https://tosisoft.com/
+Donate link: https://github.com/tosisoft/Creativehone-History
 Tags: elementor, history, creative, widget, search
 Requires at least: 5.2
 Tested up to: 6.8
 Requires PHP: 7.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,9 +14,7 @@ Creativehone History adds a custom Elementor widget to search and display creati
 Tags: elementor, history, creative, widget, search
 
 == Description ==
-Creativehone History provides a custom Elementor widget that lets you search and display creative history content on your WordPress website.  
-
-This plugin is lightweight, simple to use, and fully integrated with Elementor Free and Elementor Pro. With just a drag-and-drop, you can add the **Creativehone History** widget anywhere on your site and enable history search functionality without writing code.  
+Creativehone History adds a custom Elementor widget to easily search and display creative history content without any coding.
 
 **Key Features:**
 * Custom Elementor widget named *Creativehone History*
@@ -48,7 +46,10 @@ This plugin requires PHP 7.2 or higher.
 No. Creativehone History is lightweight and optimized for performance.
 
 = Where can I get support? =
-Visit [https://tosisoft.com/](https://tosisoft.com/) for support and documentation.
+For documentation, updates, and support, please visit the official plugin page:
+[https://github.com/tosisoft/Creativehone-History](https://github.com/tosisoft/Creativehone-History)
+or the Tosisoft website:
+[https://tosisoft.com/creativehone-history/](https://tosisoft.com/creativehone-history/)
 
 == Screenshots ==
 1. Creativehone History widget inside Elementor editor.
@@ -56,13 +57,22 @@ Visit [https://tosisoft.com/](https://tosisoft.com/) for support and documentati
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixed minor bugs.
+* Improved Elementor widget performance.
+* Updated compatibility with the latest WordPress version.
+
 = 1.0.0 =
 * Initial release of Creativehone History.
 * Added Elementor widget for searching and displaying history content.
 
 == Upgrade Notice ==
+= 1.0.1 =
+Improved stability and compatibility. We recommend updating to ensure the best experience.
+
 = 1.0.0 =
 First release of Creativehone History.
+
 
 == Screenshots ==
 1. Creativehone History widget inside Elementor editor.
