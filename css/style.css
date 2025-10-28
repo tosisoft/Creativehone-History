@@ -1,0 +1,116 @@
+.timeline {
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  color: #000;
+}
+.timeline ol {
+  position: relative;
+  list-style: none;
+}
+.timeline ol::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 3px;
+  height: 100%;
+  background: #ff0000;
+}
+.timeline ol li .item-inner {
+  padding: 20px 180px;
+  margin-bottom: 8vh;
+}
+.timeline ol li .time-wrapper {
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 0.9;
+}
+.timeline ol li .time-wrapper::before,
+.timeline ol li .time-wrapper::after {
+  content: "";
+  position: absolute;
+  background: #000;
+}
+.timeline ol li .time-wrapper::before {
+  top: 50%;
+  left: -210px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 3px;
+  transition: width 0.8s linear;
+}
+.timeline ol li .time-wrapper::after {
+  top: calc(50% - 8px);
+  left: -90px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: scale(0);
+  transform-origin: left center;
+  transition: all 0.4s linear;
+}
+.timeline ol li time,
+.timeline ol li .details>* {
+  opacity: 0;
+  transition: 0.5s;
+}
+.timeline ol li time {
+  display: inline-block;
+  transform: translateY(-30px);
+}
+.timeline ol li .details>* {
+  transform: translateY(30px);
+}
+.timeline ol li .details h3 {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 15px 0;
+}
+.timeline ol li.in-view .time-wrapper::before {
+  width: 120px;
+}
+.timeline ol li.in-view .time-wrapper::after {
+  transition-delay: 0.5s;
+  transform: scale(1.5);
+}
+.timeline ol li.in-view time,
+.timeline ol li.in-view .details>* {
+  opacity: 1;
+  transform: none;
+}
+.timeline ol li.in-view time {
+  transition-delay: 1.0s;
+}
+.timeline ol li.in-view .details h3 {
+  transition-delay: 1.2s;
+}
+.timeline ol li.in-view .details p {
+  transition-delay: 1.3s;
+}
+@media (max-width: 700px) {
+  .timeline ol li .item-inner {
+    padding: 10px;
+  }
+  .timeline ol li .time-wrapper::before {
+    display: none;
+  }
+  .timeline ol li .time-wrapper::after {
+    left: -45px;
+    transform-origin: center;
+  }
+  .timeline ol li.in-view .time-wrapper::after {
+    transition-delay: 0s;
+  }
+  .timeline ol li.in-view time {
+    transition-delay: 0.5s;
+  }
+  .timeline ol li.in-view .details h3 {
+    transition-delay: 0.7s;
+    font-size: 26px;
+  }
+  .timeline ol li.in-view .details p {
+    transition-delay: 0.9s;
+  }
+}
